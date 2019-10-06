@@ -1,40 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width">
-        <meta name="description" content="Bevanme Designs - affordable and maintainable websites for schools and non-profits">
-        <link rel="stylesheet" type="text/css" href="./main.css" >
         <title>Bevanme Designs</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Bevanme Designs - affordable and maintainable software designs">
+        <link href="https://fonts.googleapis.com/css?family=Acme|Cabin:400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com.ajax.libs/normalize/6.0.0/normalize.css" >
+        <link rel="stylesheet" type="text/css" href="main.css" >  
     </head>
     <body>
-        <header>
-            <div class="logo">
-                <img class="bevanme-log" alt="Bevanme Designs company logo" src="../images/bevanme-logo.jpg" >
-            </div>
-            <h1>Bevanme Designs</h1>
-            <address>
-                <ul>
-                    <li>7315 Running Rope</li>
-                    <li>Austin Texas 78731</li>
-                </ul>
-            </address>
-        </header>
+        <nav>
+            <h1>Gail Mitchell</h1>
+            <ul>
+                <li>About</li>
+                <li>Portfolio</li>
+                <li><a href="https://linkedin.com/in/mitchellgail" target="_blank">LinkedIn</a></li>
+            </ul>
+        </nav>
         <main>
-            <div class="schools" class="service-group">
-                <h2>School Districts</h2>
-                <ul class="services-list"> 
-                    <li>Parent Organizations</li>
-                    <li>Athletic Departments</li>
-                </ul>
-            </div>
-            <div class="nonprofit" class="service-group">
-                <h2>Non Profit Organizations</h2>
-                <ul class="services-list">
-                    <li>Grants Management</li>
-                    <li>Volunteer Engagement</li>
-                </ul>
-            </div>
+            <header role="banner">
+                <blockquote>Wisdom begins with definition of terms. -Socrates</blockquote>
+            </header>
+            <section>
+                <h2>About</h2>
+                <div>
+                    <p>Hi I'm Gail.</p>  
+                    <p>Whether you are a non-profit, an instition of learning, or a commercial enterprise, let me tell you what I would love to do...</p>
+                    <p>I want to help your organization succeed by understanding what is needed and then applying the power of technology to your people's work.</p>
+                    <p>Simple.</p>
+                </div>
+            </section>
+            <section>
+                <h2>Portfolio</h2>
+                <h3>Web Application</h3>
+                <div class="app">
+                    <div class="app-tile">
+                        <div class="app-picture">
+                            <img src="images/baseballquiz.png" />
+                        </div>
+                    </div>
+                    <div class="app-tile">
+                        <p class="app-description">I enjoy coding frontend or backend.  My family loves baseball, so I wrote this quiz app to share some fun facts.  See how you do!</p>
+                        <div><a href="https://github.com/g36mitchell/quiz" target="_blank">Github</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="https://g36mitchell.github.io/quiz/" target="_blank"> Play Quiz</a></div>
+                        <div class="app-technology">HTML, CSS, Javascript</div>
+                    </div>
+                </div>
+                <h3>Customize Off-the-Shelf (COTS)</h3>
+                <div class="app">
+                    <div class="app-tile">
+                        <div class="app-picture">
+                            <img src="images/impactaustin.png" />
+                        </div>
+                    </div>
+                    <div class="app-tile">
+                        <p class="app-description">Sometimes it isn't the time to code but to buy and configure to meet the needs of an organization.  Impact Austin needed an affordable, maintainable grant management system to support their three grants processes. With an understanding of file sharing, CSS, good UX design and data structures, Wizehive's Zengine was configured in four months, and it can be maintained by volunteers.</p>
+                    </div>
+                </div>
+            </section>
         </main>
+        <footer role="contact-info">
+            <h4>Contact me!</h4>
+            <address>Gail_Mitchell@bevanme.com</address>
+        </footer>
     </body>
 </html>

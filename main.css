@@ -1,4 +1,106 @@
-h1 {
-    font-size: 30px;
-    color: #87bebc;
+* {
+    box-sizing: border-box;
 }
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #444;
+    text-align: center;
+    line-height: 1.5;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav, footer {
+    padding: 1%;
+ /*   background-color: #ecede8;*/
+    background-color: #ccc;
+    display: flex;
+    flex-direction: row;
+ /*   color: #4D0719; */
+}
+/*
+h1, h2, h3, h4 {
+    color: #4d0719;
+}
+*/
+address {
+    margin: 26.6px 0 0 25px;
+}
+
+footer {
+    justify-content: center;
+}
+
+nav {
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+/*    z-index: 10;  */
+}
+
+blockquote {
+ /*   color: #ecede8;
+    font-family: 'Acme', sans-serif; */
+    padding: 15% 0;
+    font-size: 1.3em;
+}
+
+/*
+header {
+    background-image: url(images/field_of_flowers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+/*    flex-wrap: wrap;  */
+}
+
+.app-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 10px;
+}
+
+section {
+    min-height: 200px;
+    padding: 75px; 
+    background-color: #bbb;
+}
+
+section:nth-child(even) {
+    background-color: #ddd;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header {
+        padding: 20% 0 0 0;
+    }
+    
+} 
