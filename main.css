@@ -3,75 +3,184 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
-    color: #444;
-    text-align: center;
+    background-color: #F2F2F2;
+    color: #383838;
     line-height: 1.5;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.subsection {
+    padding: 0px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
+}
+
+.subsection p {
+    padding: 0px;
+    margin-top: 0px;
 }
 
 nav, footer {
-    padding: 1%;
- /*   background-color: #ecede8;*/
-    background-color: #ccc;
+    width: 100%;
+    background: #0B0B0B;
     display: flex;
     flex-direction: row;
- /*   color: #4D0719; */
-}
-/*
-h1, h2, h3, h4 {
-    color: #4d0719;
-}
-*/
-address {
-    margin: 26.6px 0 0 25px;
 }
 
-footer {
-    justify-content: center;
-}
-
-nav {
-    justify-content: space-between;
+header {
+    background-color: #F2F2F2;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-/*    z-index: 10;  */
+    z-index: 10; 
 }
 
-blockquote {
- /*   color: #ecede8;
-    font-family: 'Acme', sans-serif; */
-    padding: 15% 0;
-    font-size: 1.3em;
+h1 {
+    color: #572C57;
+    font-size: 2.0em;
+    font-variant: small-caps;
+    font-weight: bold;
+    margin: 0;
+    padding: 10px;
 }
-
-/*
-header {
-    background-image: url(images/field_of_flowers.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
 
 ul {
+    margin: 0;
     display: flex;
     flex-direction: row;
     list-style-type: none;
 }
 
-li {
-    padding: 10px;
+a {
+    color: #F2F2F2;
 }
+
+a:link {
+    text-decoration: none;
+}
+  
+ul li:hover {
+    font-size: 1.2em;
+}
+
+a:active {
+    font-weight: bold;
+}
+
+li {
+    padding: 20px;
+}
+
+.banner {
+    background-image: url(images/louis-reed-business.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 150px;
+}
+
+blockquote {
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-family: 'Pacifico', cursive; 
+    padding: 20% 0;
+}
+
+h2 {
+    color: #572C57;
+    font-size: 1.2;
+    font-variant: small-caps;
+    font-weight: bolder;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-color: #CECECE;
+    border-width: 1px;	
+	border-radius: 3px;
+	box-shadow: 3px 3px #CECECE;
+  /*  text-align: center; */
+    padding: 10px;
+    background-color: white;
+}
+
+.about-information {
+    display: flex;
+    flex-direction:row;
+}
+
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.portfolio-information {
+    display: flex;
+    flex-direction:row;
+ /*   max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-color: #CECECE;
+    border-width: 1px;	
+	border-radius: 3px;
+	box-shadow: 3px 3px #CECECE;
+  /*  text-align: center;
+    padding: 10px;
+    background-color: white; */
+}
+
+
+
+h3 {
+    text-align: center;
+    color: #572C57;
+    font-variant: small-caps;
+}
+
+address {
+    padding: 20px 0 10px 0;
+    font-size: .90em;
+}
+
+footer {
+    justify-content: center;
+    position: relative;
+    top: 150px;
+    color: #F2F2F2;
+}
+
 
 .app {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-/*    flex-wrap: wrap;  */
+    flex-wrap: wrap;
+    max-width: 700px;
+    border-style: solid;
+    border-color: #CECECE;
+    border-width: 1px;	
+	border-radius: 3px;
+	box-shadow: 3px 3px #CECECE;
+    text-align: center;
+	margin: 20px 30px 10px 30px;
+    padding: 10px;
+    background-color: #FFFFFF;
 }
 
 .app-tile {
@@ -81,26 +190,42 @@ li {
     padding: 10px;
 }
 
+.app-tile a {
+    color: black;
+}
 section {
     min-height: 200px;
-    padding: 75px; 
-    background-color: #bbb;
+    padding: 10px; 
+    background-color: #F2F2F2;
+    position: relative;
+    top: 150px;
 }
 
-section:nth-child(even) {
-    background-color: #ddd;
-}
-
-
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 600px) {
     .app {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    } 
+    
+    .self-portrait {
+        display: none;
     }
 
-    header {
-        padding: 20% 0 0 0;
+    .about-section {
+        text-align: center;
     }
-    
+
+    .portfolio-information {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .portfolio-information {
+        display: flex;
+        flex-direction: column;
+    }
 } 
