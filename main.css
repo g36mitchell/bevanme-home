@@ -62,7 +62,7 @@ a:link {
     text-decoration: none;
 }
   
-ul li:hover {
+li:hover {
     font-size: 1.2em;
 }
 
@@ -95,6 +95,7 @@ h2 {
     font-size: 1.2;
     font-variant: small-caps;
     font-weight: bolder;
+    padding-left: 40px;
 }
 
 .about-section {
@@ -130,27 +131,13 @@ h2 {
 .portfolio-information {
     display: flex;
     flex-direction:row;
- /*   max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-style: solid;
-    border-color: #CECECE;
-    border-width: 1px;	
-	border-radius: 3px;
-	box-shadow: 3px 3px #CECECE;
-  /*  text-align: center;
-    padding: 10px;
-    background-color: white; */
 }
-
-
 
 h3 {
     text-align: center;
     color: #572C57;
     font-variant: small-caps;
+    padding-left: 40px;
 }
 
 address {
@@ -159,6 +146,7 @@ address {
 }
 
 footer {
+    z-index: 10; 
     justify-content: center;
     position: relative;
     top: 150px;
@@ -199,6 +187,11 @@ section {
     background-color: #F2F2F2;
     position: relative;
     top: 150px;
+}
+
+.app-technology {
+    font-style: italic;
+    font-size: .9em;
 }
 
 @media only screen and (max-width: 600px) {
