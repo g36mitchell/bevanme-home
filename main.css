@@ -181,6 +181,12 @@ footer {
 .app-tile a {
     color: black;
 }
+
+.ImpactAustin {
+    color: #7A9555;
+    font-weight: bold;
+}
+
 section {
     min-height: 200px;
     padding: 10px; 
